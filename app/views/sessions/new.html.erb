@@ -8,11 +8,8 @@
 <%= f.submit "Login" %>
 <% end %>
 
-<% if flash[:error] %>
-  <div class="col-md-3">
-    <ul>
-      <li><%= render partial: "layouts/flashes" %></li>
-    </ul>
-  </div>
-<% end %>
-
+<div class="col-md-3">
+  <ul>
+    <li><%= render partial: "layouts/flashes" %></li>
+  </ul>
+</div>
