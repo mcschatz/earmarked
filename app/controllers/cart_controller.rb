@@ -16,7 +16,7 @@ class CartController < ApplicationController
 
   def destroy
     cart.delete(params)
-    flash[:notice] = "Your <strong>donation</strong> to #{find_candidate}'s #{find_issue} campaign has been removed from your cart. <a href='/candidates'>CLICK HERE TO RESUBMIT YOUR DONATION</a>"
+    flash[:notice] = "Your <strong>donation</strong> to #{find_candidate}'s #{find_issue} campaign has been removed from your cart. <a href='/candidates'>Click HERE to resubmit your donation</a>"
     redirect_to cart_path
   end
 
